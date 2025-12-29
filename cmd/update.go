@@ -8,7 +8,7 @@ import (
 
 	"github.com/rhysd/go-github-selfupdate/selfupdate"
 	"github.com/spf13/cobra"
-	"org.olifinks.go-cli-template/src/version"
+	"org.olifink.go-cli-template/src/version"
 )
 
 var (
@@ -35,13 +35,13 @@ func runUpdate(cmd *cobra.Command, args []string) error {
 	fmt.Printf("Current version: %s\n", currentVersion)
 
 	// Configure selfupdate
-	latest, found, err := selfupdate.DetectLatest("olifinks/go-cli-template")
+	latest, found, err := selfupdate.DetectLatest("olifink/go-cli-template")
 	if err != nil {
 		return fmt.Errorf("error checking for updates: %w", err)
 	}
 
 	if !found {
-		return fmt.Errorf("no releases found for olifinks/go-cli-template")
+		return fmt.Errorf("no releases found for olifink/go-cli-template")
 	}
 
 	fmt.Printf("Latest version:  %s\n", latest.Version)
