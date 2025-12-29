@@ -24,7 +24,7 @@ builds:
       - darwin
     ldflags:
       - -s -w
-      - -X org.olifink.go-cli-template/src/version.Version={{.Version}}
+      - -X org.olifink.go-cli-template/src/version.Version=v{{.Version}}
       - -X org.olifink.go-cli-template/src/version.Commit={{.Commit}}
       - -X org.olifink.go-cli-template/src/version.Date={{.Date}}
 
