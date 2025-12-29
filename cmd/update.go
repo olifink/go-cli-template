@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
+	"com.github.olifink.go-cli-template/src/version"
 	"github.com/rhysd/go-github-selfupdate/selfupdate"
 	"github.com/spf13/cobra"
-	"org.olifink.go-cli-template/src/version"
 )
 
 var (
